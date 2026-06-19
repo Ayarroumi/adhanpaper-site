@@ -6,6 +6,7 @@ Production URLs:
 
 - https://adhanpaper.com/
 - https://adhanpaper.com/privacy/
+- https://adhanpaper.com/cookie-policy/
 - https://adhanpaper.com/account-deletion/
 
 This repository intentionally contains only public website files. The app source
