@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../assets/logo-gold.png">
     <title>Privacy Policy | Adhan Paper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body>
+  <body class="legal-page">
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="brand" href="../">Adhan Paper</a>
-        <nav class="nav" aria-label="Main navigation">
+      <div class="legal-header">
+        <a class="brand" href="../" aria-label="Adhan Paper home"><img src="../assets/logo-gold.png" alt="Adhan Paper"></a>
+        <nav class="legal-nav" aria-label="Legal navigation">
           <a href="../privacy/">Privacy Policy</a>
           <a href="../cookie-policy/">Cookie Policy</a>
           <a href="../account-deletion/">Account Deletion</a>
@@ -18,11 +22,11 @@
       </div>
     </header>
 
-    <main class="page">
-      <article class="panel">
+    <main class="legal-main">
+      <article class="legal-panel">
         <p class="eyebrow">Adhan Paper</p>
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: June 19, 2026</p>
+        <p class="meta">Effective date: September 4, 2026</p>
 
         <p>
           Adhan Paper provides a mobile companion app, public support website, and
@@ -59,6 +63,7 @@
           <li>Purchase information, such as Google Play product IDs, order IDs, purchase tokens, purchase timestamps, purchase status, refund status, and marketplace access records.</li>
           <li>App settings and device configuration information, such as prayer calculation settings, madhab, high latitude rule, prayer offsets, muted prayers, volume settings, selected device content, and sync configuration.</li>
           <li>Support communications, such as your name, email address, message content, and any information you choose to provide when contacting us.</li>
+          <li>Waitlist information, namely the email address you submit through the Adhan Paper launch waitlist, so that we can contact you about launch availability.</li>
           <li>Website and service technical data, such as IP address, browser information, language, request logs, and interaction logs needed to operate, secure, troubleshoot, and improve the service.</li>
         </ul>
         <p>
@@ -78,6 +83,7 @@
           <li>Delivering app content, marketplace content, notifications, and product access.</li>
           <li>Processing transactions, purchase verification, refund handling, and compliance with billing obligations.</li>
           <li>Customer support, communication, troubleshooting, and user feedback handling.</li>
+          <li>Operating the launch waitlist and notifying people who asked to hear about availability.</li>
           <li>Fraud prevention, risk management, abuse prevention, service reliability, and legal compliance.</li>
           <li>Analytics, performance monitoring, and product improvement where applicable.</li>
         </ul>
@@ -95,8 +101,10 @@
           We do not sell personal data. We may share or process data with service
           providers that help us operate Adhan Paper, including Google Sign-In,
           Firebase, Firebase Cloud Messaging, Google Play Billing, backend and cloud
-          hosting providers, GitHub Pages for public website hosting, Microsoft 365
-          for business email and support communications, and other providers needed
+          hosting providers, GitHub Pages for public website hosting, Cloudflare
+          Turnstile for waitlist abuse prevention, AWS Lambda and Amazon Simple Email
+          Service for secure waitlist processing and delivery, Microsoft 365 for
+          business email and support communications, and other providers needed
           for security, operations, support, and legal compliance.
         </p>
         <p>
@@ -138,6 +146,13 @@
           records may be retained for a limited period after an account deletion
           request where retention is legally or technically required.
         </p>
+        <p>
+          Waitlist email addresses are delivered to our Microsoft 365 business inbox
+          and retained only for as long as needed to manage launch communications or
+          until you ask us to remove them. The backend keeps only a short-lived daily
+          counter for abuse prevention; it does not store waitlist email addresses or
+          IP addresses in DynamoDB.
+        </p>
 
         <h2>Account and Data Deletion</h2>
         <p>
@@ -165,10 +180,12 @@
         <p>
           The public Adhan Paper website currently uses static pages and does not
           intentionally set non-essential cookies, advertising cookies, or analytics
-          tracking cookies. Website hosting providers may process standard technical
-          logs such as IP address and browser information to operate and protect the
-          site. If we add non-essential cookies or analytics later, we will update
-          our disclosures and request consent where required.
+          tracking cookies. The waitlist uses Cloudflare Turnstile, an essential
+          security service that processes technical browser and network information to
+          distinguish people from automated abuse. Website hosting providers may
+          process standard technical logs such as IP address and browser information to
+          operate and protect the site. If we add non-essential cookies or analytics
+          later, we will update our disclosures and request consent where required.
         </p>
         <p>
           For more information, see our
@@ -207,5 +224,6 @@
         </p>
       </article>
     </main>
+    <footer class="legal-footer"><a href="../">Back to Adhan Paper</a></footer>
   </body>
 </html>
