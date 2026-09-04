@@ -1,6 +1,6 @@
 const CONFIG = {
   appStoreUrl: "",
-  playStoreUrl: "",
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.aey.adhanpaper&pcampaignid=web_share",
   marketplaceUrl: "",
   // Set these after deploying the backend and creating the Cloudflare Turnstile widget.
   waitlistEndpoint: "https://hvqze5mh58.execute-api.eu-west-1.amazonaws.com/waitlist",
