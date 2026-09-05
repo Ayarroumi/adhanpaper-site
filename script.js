@@ -7,6 +7,28 @@ const CONFIG = {
   turnstileSiteKey: "0x4AAAAAAEnYmhjGbEBEv5M0"
 };
 
+const waitlistText = document.documentElement.lang.toLowerCase().startsWith('nl')
+  ? {
+      join: 'Schrijf me in',
+      joining: 'Inschrijven…',
+      invalidEmail: 'Vul een geldig e-mailadres in.',
+      endpointUnavailable: 'De wachtlijst is nog niet verbonden.',
+      verificationUnavailable: 'De beveiligingscontrole is nog niet ingesteld.',
+      verificationRequired: 'Rond de beveiligingscontrole af en probeer het opnieuw.',
+      verificationError: 'De beveiligingscontrole is tijdelijk niet beschikbaar. Probeer het zo opnieuw.',
+      genericError: 'Er ging iets mis. Probeer het zo opnieuw.'
+    }
+  : {
+      join: 'Join the list',
+      joining: 'Joining…',
+      invalidEmail: 'Please enter a valid email address.',
+      endpointUnavailable: 'The launch list is not connected yet.',
+      verificationUnavailable: 'Security verification is not configured yet.',
+      verificationRequired: 'Please complete the security check and try again.',
+      verificationError: 'Security verification is unavailable. Please try again shortly.',
+      genericError: 'Something went wrong. Please try again in a moment.'
+    };
+
 const toast = document.querySelector('.toast');
 let toastTimer;
 function showToast(message) {
@@ -98,7 +120,7 @@ async function renderTurnstile() {
       turnstile.reset(turnstileWidgetId);
     }
   } catch (_error) {
-    waitlistError.textContent = 'Security verification is unavailable. Please try again shortly.';
+    waitlistError.textContent = waitlistText.verificationError;
   }
 }
 
@@ -118,7 +140,7 @@ function resetWaitlist() {
   const submitButton = waitlistForm?.querySelector('button[type="submit"]');
   if (submitButton) {
     submitButton.disabled = false;
-    submitButton.innerHTML = 'Join the list <i class="bi bi-arrow-right"></i>';
+    submitButton.innerHTML = `${waitlistText.join} <i class="bi bi-arrow-right"></i>`;
   }
 }
 
@@ -175,29 +197,29 @@ waitlistForm?.addEventListener('submit', async event => {
 
   const email = waitlistEmail.value.trim();
   if (!email || !waitlistEmail.validity.valid) {
-    waitlistError.textContent = 'Please enter a valid email address.';
+    waitlistError.textContent = waitlistText.invalidEmail;
     waitlistEmail.focus();
     return;
   }
 
   if (!CONFIG.waitlistEndpoint) {
-    waitlistError.textContent = 'The launch list is not connected yet.';
+    waitlistError.textContent = waitlistText.endpointUnavailable;
     return;
   }
 
   if (!CONFIG.turnstileSiteKey) {
-    waitlistError.textContent = 'Security verification is not configured yet.';
+    waitlistError.textContent = waitlistText.verificationUnavailable;
     return;
   }
 
   if (!turnstileToken) {
-    waitlistError.textContent = 'Please complete the security check and try again.';
+    waitlistError.textContent = waitlistText.verificationRequired;
     return;
   }
 
   const submitButton = waitlistForm.querySelector('button[type="submit"]');
   submitButton.disabled = true;
-  submitButton.textContent = 'Joining…';
+  submitButton.textContent = waitlistText.joining;
 
   try {
     const response = await fetch(CONFIG.waitlistEndpoint, {
@@ -222,9 +244,9 @@ waitlistForm?.addEventListener('submit', async event => {
     waitlistSuccess?.classList.add('is-visible');
     waitlistSuccess?.querySelector('button')?.focus();
   } catch (error) {
-    waitlistError.textContent = error.message || 'Something went wrong. Please try again in a moment.';
+    waitlistError.textContent = error.message || waitlistText.genericError;
     resetTurnstile();
     submitButton.disabled = false;
-    submitButton.innerHTML = 'Join the list <i class="bi bi-arrow-right"></i>';
+    submitButton.innerHTML = `${waitlistText.join} <i class="bi bi-arrow-right"></i>`;
   }
 });
