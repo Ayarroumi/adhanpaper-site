@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("assets/fonts/cormorant-garamond-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("assets/fonts/inter-latin.woff2") format("woff2");
+}
+
 :root {
   --navy: #102a37;
   --navy-deep: #082331;
@@ -149,14 +165,14 @@ h2 { font-family: var(--serif); font-size: clamp(42px, 5vw, 62px); line-height: 
 
 .closing-cta { background: var(--navy-deep); color: white; text-align: center; }
 .closing-inner { max-width: 760px; }
-.closing-inner > img { width: 96px; margin: 0 auto 20px; }
+.closing-inner > img { width: 96px; height: auto; margin: 0 auto 20px; }
 .closing-inner h2 { color: white; }
 .closing-inner p { color: #b7c2c8; margin-bottom: 28px; }
 
 .site-footer { background: #061d29; color: #c8d0d4; padding: 34px 0; border-top: 1px solid rgba(255,255,255,.06); }
 .footer-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 20px 32px; }
 .footer-brand { display: flex; align-items: center; gap: 16px; font-size: 12px; }
-.footer-brand img { width: 62px; }
+.footer-brand img { width: 62px; height: auto; }
 .footer-links { display: flex; gap: 20px; font-size: 12px; }
 .footer-links a:hover, .footer-legal a:hover { color: var(--gold-soft); }
 .footer-legal { display: flex; flex-wrap: wrap; gap: 20px; font-size: 11px; color: #a9b5bb; }

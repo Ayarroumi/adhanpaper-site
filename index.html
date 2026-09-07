@@ -26,12 +26,12 @@
   <meta name="twitter:image" content="https://adhanpaper.com/assets/art-garden-with-times.webp" />
   <title>Adhan Paper | E-Ink Adhan Clock</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="assets/logo-gold.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css?v=20260904-2" />
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+  <link rel="stylesheet" href="styles.css?v=20260907-1" />
 
   <script type="application/ld+json">
   {
@@ -99,7 +99,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Adhan Paper home">
-        <img src="assets/logo-gold.png" alt="Adhan Paper" />
+        <img src="assets/logo-gold.webp" width="192" height="220" alt="Adhan Paper" />
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#features">Features</a>
@@ -124,7 +124,11 @@
           </div>
         </div>
         <div class="hero-visual reveal delay-1">
-          <img src="assets/art-garden-with-times.webp" alt="Adhan Paper displaying Garden Reverie with the date and daily prayer times" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/art-garden-with-times-600.avif" type="image/avif" />
+            <source srcset="assets/art-garden-with-times-900.avif" type="image/avif" />
+            <img src="assets/art-garden-with-times.webp" width="1086" height="1448" fetchpriority="high" decoding="async" alt="Adhan Paper displaying Garden Reverie with the date and daily prayer times" />
+          </picture>
         </div>
       </div>
     </section>
@@ -154,7 +158,10 @@
       <div class="container app-grid">
         <div class="app-showcase-single reveal" aria-label="Adhan Paper app home screen">
           <div class="app-phone-frame">
-            <img src="assets/app-home.png" alt="Adhan Paper app home screen with prayer times" />
+            <picture>
+              <source srcset="assets/app-home-640.avif" type="image/avif" />
+              <img src="assets/app-home.png" width="691" height="1536" loading="lazy" decoding="async" alt="Adhan Paper app home screen with prayer times" />
+            </picture>
           </div>
           <div class="store-buttons store-buttons-mobile" aria-label="Download the Adhan Paper app">
             <a class="store-button" href="#" data-app-link aria-label="Download on the App Store"><i class="bi bi-apple"></i><span><small>Download on the</small>App Store</span></a>
@@ -224,15 +231,15 @@
 
         <div class="art-grid">
           <article class="art-card reveal">
-            <div class="art-frame"><img src="assets/art-garden-with-times.webp" alt="Garden Reverie on Adhan Paper with Islamic and Gregorian dates and five daily prayer times" loading="lazy" /></div>
+            <div class="art-frame"><img src="assets/art-garden-with-times.webp" width="1086" height="1448" alt="Garden Reverie on Adhan Paper with Islamic and Gregorian dates and five daily prayer times" loading="lazy" decoding="async" /></div>
             <h3>Garden Reverie</h3>
           </article>
           <article class="art-card reveal delay-1">
-            <div class="art-frame"><img src="assets/art-desert-rider-with-times.webp" alt="Desert Traveller on Adhan Paper with Islamic and Gregorian dates and five daily prayer times" loading="lazy" /></div>
+            <div class="art-frame"><img src="assets/art-desert-rider-with-times.webp" width="1086" height="1448" alt="Desert Traveller on Adhan Paper with Islamic and Gregorian dates and five daily prayer times" loading="lazy" decoding="async" /></div>
             <h3>Desert Traveller</h3>
           </article>
           <article class="art-card reveal delay-2">
-            <div class="art-frame"><img src="assets/art-kaaba-with-times.webp" alt="The Sacred House on Adhan Paper with Islamic and Gregorian dates and five daily prayer times" loading="lazy" /></div>
+            <div class="art-frame"><img src="assets/art-kaaba-with-times.webp" width="1086" height="1448" alt="The Sacred House on Adhan Paper with Islamic and Gregorian dates and five daily prayer times" loading="lazy" decoding="async" /></div>
             <h3>The Sacred House</h3>
           </article>
         </div>
@@ -245,7 +252,7 @@
 
     <section class="product-section" id="product">
       <div class="container product-grid">
-        <div class="product-image reveal"><img src="assets/art-kaaba-with-times.webp" alt="Adhan Paper displaying The Sacred House with the date and daily prayer times" loading="lazy" /></div>
+        <div class="product-image reveal"><img src="assets/art-kaaba-with-times.webp" width="1086" height="1448" alt="Adhan Paper displaying The Sacred House with the date and daily prayer times" loading="lazy" decoding="async" /></div>
         <div class="product-copy reveal delay-1">
           <span class="eyebrow">CRAFTED WITH CARE</span>
           <h2>Made to be seen.<br>Built to belong.</h2>
@@ -290,7 +297,7 @@
 
     <section class="closing-cta section-pad" id="buy">
       <div class="container closing-inner reveal">
-        <img src="assets/logo-gold.png" alt="" aria-hidden="true" />
+        <img src="assets/logo-gold.webp" width="192" height="220" alt="" aria-hidden="true" />
         <h2>Faith, art and prayer times.<br>In one quiet frame.</h2>
         <p>Bring Adhan Paper into your home.</p>
         <a class="button button-primary" href="#" data-shop-link>Shop Adhan Paper <i class="bi bi-arrow-right"></i></a>
@@ -301,7 +308,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/logo-gold.png" alt="Adhan Paper" />
+        <img src="assets/logo-gold.webp" width="192" height="220" alt="Adhan Paper" />
         <span>Prayer times, beautifully displayed.</span>
       </div>
       <div class="footer-links">
@@ -332,7 +339,7 @@
       </button>
 
       <div class="waitlist-mark" aria-hidden="true">
-        <img src="assets/logo-gold.png" alt="" />
+        <img src="assets/logo-gold.webp" width="192" height="220" alt="" />
       </div>
 
       <div class="waitlist-form-view">
