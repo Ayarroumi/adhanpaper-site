@@ -32,7 +32,7 @@ Dit zijn inhoudelijke vergelijkingen, geen bewijs dat deze sites op een specifie
 
 ## Geprioriteerd contentplan
 
-De Nederlandse keuzehulp op `/nl/gids/adhan-klok-kiezen/` is gebouwd. De overige pagina’s hieronder blijven voorstellen. Publiceer eerst oorspronkelijke informatie met eigen productbeelden; voorkom dunne synoniempagina’s.
+De Nederlandse keuzehulp is op verzoek verwijderd. Er worden geen nieuwe gidsen gepubliceerd zonder voorafgaande beoordeling. De onderwerpen hieronder zijn uitsluitend onderzoeksvoorstellen. Publiceer eerst oorspronkelijke informatie met eigen productbeelden; voorkom dunne synoniempagina’s.
 
 | Volgorde | Doelzoekwoord | Titel | Inhoudelijke invalshoek | Voorgestelde URL |
 | --- | --- | --- | --- | --- |
@@ -73,4 +73,4 @@ Totaal: 6 klikken, 56 vertoningen, CTR 10,71%, gemiddelde positie 15,39. De vori
 
 De homepage had 5 klikken en 34 vertoningen (gemiddelde positie 2,62); `/nl/` had 1 klik en 27 vertoningen (positie 29,67). Pagina- en querytotalen hoeven niet op te tellen tot het propertytotaal door GSC-aggregatie en niet-teruggegeven zoekvragen. De gemiddelde homepagepositie bewijst geen hoge positie op een specifiek Engels productzoekwoord.
 
-Prioriteit op basis van deze kleine dataset: versterk `/nl/` voor ‘adhan klok’ en maak de moderne uitstraling en het fysieke frame duidelijk. Voeg één nuttige Nederlandse keuzehulp toe en link beide pagina’s aan elkaar. ‘Digitaal’ en ‘tablet’ hebben slechts één vertoning; ze rechtvaardigen geen aparte pagina’s. Er zijn geen striking-distance- of cannibalisatiekandidaten teruggegeven. Meet dezelfde vier queries en beide Nederlandse pagina’s na vier tot acht weken; de nieuwe keuzehulp heeft nog geen nulmeting.
+Prioriteit op basis van deze kleine dataset: versterk `/nl/` voor ‘adhan klok’ en maak de moderne uitstraling en het fysieke frame duidelijk. Een Nederlandse keuzehulp is besproken en vervolgens op verzoek verwijderd. Richt verdere verbeteringen voorlopig op de bestaande productpagina. ‘Digitaal’ en ‘tablet’ hebben slechts één vertoning; ze rechtvaardigen geen aparte pagina’s. Er zijn geen striking-distance- of cannibalisatiekandidaten teruggegeven. Meet dezelfde vier queries en de Nederlandse productpagina na vier tot acht weken.

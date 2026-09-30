@@ -37,3 +37,7 @@ Met Node.js en `sharp` beschikbaar: `node scripts/generate-favicons.cjs`. Het sc
 De productpagina heeft een zichtbaar blok met drie gebruiksstappen, een titel gericht op een moderne adhan klok voor thuis en interne links naar de nieuwe keuzehulp. De keuzehulp is een oorspronkelijke Nederlandse pagina met Article-data, productillustratie en teruglinks. Er is geen Engelse vertaling en dus geen fictieve hreflang-tegenhanger. Beide homepages gebruiken nu een wachtlijst-CTA.
 
 Lokale controles geslaagd: gids op 320/390/1440 pixels zonder overflow of JavaScriptfouten, geladen illustratie, navigatie terug naar productpagina, cross-page ankers, JSON-LD en drie sitemap-URL's. Wachtlijst opnieuw getest op beide talen en desktop/mobiel met gesimuleerde CAPTCHA en backend; er is niets naar productie verstuurd.
+
+## Verwijdering op verzoek
+
+De Nederlandse keuzehulp is verwijderd, inclusief beide links op de productpagina, de sitemapvermelding en de specifieke afbeeldingstijlen. De overige SEO-, productpagina- en faviconwijzigingen blijven behouden. De eerdere gidscontroles hierboven zijn historische resultaten, geen beschrijving van het huidige aanbod.
