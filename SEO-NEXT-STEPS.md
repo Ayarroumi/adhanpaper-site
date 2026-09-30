@@ -1,6 +1,8 @@
 # Adhan Paper SEO-vervolgstappen
 
-Laatst bijgewerkt: 5 september 2026
+Laatst bijgewerkt: 1 oktober 2026
+
+Zie ook [zoekwoordanalyse en contentplan](SEO-KEYWORD-PLAN.md) en [controleverslag](SEO-VALIDATION.md).
 
 ## Doel
 
@@ -12,7 +14,7 @@ Adhan Paper als merk duidelijk houden en organisch beter vindbaar worden op onde
 - Volledige Nederlandse pagina onder `/nl/`, gericht op `adhan klok`.
 - Canonicals en wederzijdse `hreflang`-verwijzingen.
 - `robots.txt` en een XML-sitemap.
-- Organization-, WebSite- en Product-structured data.
+- Organization-, WebSite- en WebPage-structured data; geen onbevestigde aanbiedingen of reviews.
 - Zichtbare vraag-en-antwoordsecties over het product.
 - Beschrijvende metadata en alt-teksten bij de belangrijkste productbeelden.
 
@@ -34,7 +36,7 @@ Zolang het product nog niet direct besteld kan worden, is een CTA zoals `Ontvang
 Publiceer zodra de gegevens definitief zijn:
 
 - exacte afmetingen en schermformaat;
-- e-inktype en materiaal van de lijst;
+- papierachtige uitstraling en materiaal van de lijst;
 - stroomvoorziening en accuduur;
 - speaker- en audio-informatie;
 - wifi-, app- en platformondersteuning;
@@ -46,7 +48,7 @@ Publiceer zodra de gegevens definitief zijn:
 
 - Gebruik foto's in echte woonkamers en close-ups van het matte scherm.
 - Maak een korte demonstratievideo van de kunst- en gebedstijdweergave.
-- Leg uit waarom Adhan Paper voor kleuren-e-ink en een houten lijst kiest.
+- Leg uit waarom Adhan Paper voor een papierachtige kleurweergave en een lijst kiest.
 - Laat het ontwerp- en ontwikkelproces zien met eigen beelden en concrete details.
 
 ### 5. Externe autoriteit opbouwen
@@ -78,5 +80,5 @@ Beoordeel de resultaten over meerdere weken. Vermijd keyword stuffing, massaal g
 
 - Het zichtbare FAQ-gedeelte is nuttig, maar Google toont sinds mei 2026 geen FAQ rich results meer. Verwacht daarom geen voordeel van `FAQPage`-markup.
 - Product structured data zonder `offers`, `review` of `aggregateRating` komt niet in aanmerking voor een Product snippet. Dit is acceptabel zolang Adhan Paper nog niet te koop is; verzin deze gegevens niet.
-- Voeg later expliciete afbeeldingsafmetingen en responsieve `srcset`-varianten toe om mogelijke layoutverschuivingen en onnodige mobiele downloads te beperken.
+- De belangrijkste afbeeldingen hebben afmetingen; de hero gebruikt mobiele en desktop-AVIF-varianten. Controleer prestaties met echte mobiele velddata na publicatie.
 - Social metadata en de favicon helpen presentatie en herkenbaarheid, maar zijn geen directe rankingfactoren.

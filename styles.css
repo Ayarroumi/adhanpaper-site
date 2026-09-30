@@ -463,3 +463,8 @@ body.modal-open { overflow: hidden; }
   .waitlist-input-row { grid-template-columns: 1fr; }
   .waitlist-input-row .button { width: 100%; }
 }
+
+/* Editorial guide uses the existing brand typography and legal-panel layout. */
+.guide-figure { margin: 28px 0; }
+.guide-figure img { display: block; width: min(100%, 420px); height: auto; margin: 0 auto; border-radius: 12px; }
+.guide-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.6; margin-top: 14px; }
